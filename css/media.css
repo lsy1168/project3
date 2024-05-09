@@ -1522,6 +1522,13 @@ display: none;
   flex-direction: column;
   justify-content: space-between;
 }
+.s4-top-ti2 {
+  height: 78px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.62;
+  -webkit-line-clamp: 3;
+}
 .s4-ct-top {
   float: none;
   width: 100%;
