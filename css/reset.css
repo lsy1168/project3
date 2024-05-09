@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+   word-break: keep-all;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+/* custom */
+/* 원하는 폰트 크기 (10px) / 브라우저 폰트크기(16xp = 0.625 * 100%) = 62.5% */
+/* 웹문서에는 rem(root em) 단위 사용 / 16px = 1.6rem / 10px = 1rem */
+html{
+    font-size: 62.5%;
+    line-height: 1.75;
+    font-family: 'PR', 'NanumSquareNeo';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    = 웹 브라우저에서 글꼴 계단 현상 완화시켜주는 코드 */
+*{
+    box-sizing: border-box;
+}
+/* ====================================
+    ======= 전역변수 ======    
+==================================== */
+
+:root{
+    --primary1:#ffea3b;
+    --primary2:#F3F3F3;
+    --primary3:#fdebeb;
+    --primary4:#4D4D4;
+    --text1:#000000;
+    --text2:#404040;
+    --text3:#8f8e8f;
+    --text4:#dfdfdf;
+    --wh:#fff;
+    --bg:rgba(255, 255, 255, .9);
+    --bg2:#000;
+    /* 컬럼이랑 거터 */
+    --col: 11.6rem;
+   --gu: 1.4rem;
+    --gu2: 2.8rem;
+   --unit: calc(var(--col) + var(--gu2));
+   --row: 2.8rem;
+}
+a{
+    text-decoration: none;
+    font-family: 'PR';
+    font-size: 1.6rem;
+}
+body{
+    font-family:'PR';
+}
+/* ====================================
+    ======= global classes ======    
+==================================== */
+.h1,h1{
+    font-size: 2.5vw;
+    font-weight: 200;
+}
+.h2,h2{
+    font-size: 2.2vw;
+    font-weight: 300;
+}
+.h3,h3{
+    font-size: 2vw;
+    font-weight: 400;
+}
+.h4,h4{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.h5,h5{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.h6,h6{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.text{
+    font-size: 1.6rem; 
+    font-weight: 500;
+    line-height: 1.75;
+}
+.link{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+strong{
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+/* snippet : 사용자 정의 축약 명령어(줄임말) (코드를 단축키로 지정하는것) */
+/* ctrl + shift + p > snippet 검색 > configure > 사용할 확장자 열기 */
+
+.df{
+    display: flex;
+}
+.pr{
+    position: relative;
+}
+.pa{
+    position: absolute;
+}
